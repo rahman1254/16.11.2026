@@ -94,7 +94,7 @@ video{width:100%;max-height:78vh;border-radius:20px;background:#000;display:bloc
     $('total').textContent=Math.floor((t-start)/86400000).toLocaleString('tr-TR');
   }
   tick();setInterval(tick,1000);
-  var unlock=new Date(2026,10,9,0,0,0),bar=$('lock');
+  var unlock=new Date(2026,10,16,22,22,0),bar=$('lock');
   function pad(n){return n<10?'0'+n:''+n}
   function isOpen(){return Date.now()>=unlock.getTime()||location.hash==='#deneme'}
   function lockTick(){
